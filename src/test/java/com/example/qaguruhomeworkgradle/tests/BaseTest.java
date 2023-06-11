@@ -19,6 +19,7 @@ public class BaseTest {
     public static void setUp() {
         Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
+        Configuration.browserVersion ="113.0";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
     }
