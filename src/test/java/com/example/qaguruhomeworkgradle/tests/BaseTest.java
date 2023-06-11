@@ -17,13 +17,14 @@ public class BaseTest {
 
     @BeforeAll
     public static void setUp() {
-        WebDriverManager.chromedriver().setup();
+        Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.timeout = 4000;
         Configuration.pageLoadStrategy = "none";
+/*
         Configuration.browserPosition = "0x0";
+*/
         Configuration.holdBrowserOpen = false;
     }
 

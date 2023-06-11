@@ -5,7 +5,9 @@ import com.codeborne.selenide.SelenideElement;
 import com.example.qaguruhomeworkgradle.component.CalendarComponent;
 import com.example.qaguruhomeworkgradle.component.RegistrationResultsModal;
 import java.io.File;
+import java.time.Duration;
 
+import static com.codeborne.selenide.Condition.id;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -36,7 +38,7 @@ public class RegistrationPage {
 
     public RegistrationPage openPage(){
         open(URL);
-        footer.should(visible);
+        footer.should(visible, Duration.ofSeconds(10));
         Selenide.executeJavaScript("$('footer').remove()");
 
         return this;
