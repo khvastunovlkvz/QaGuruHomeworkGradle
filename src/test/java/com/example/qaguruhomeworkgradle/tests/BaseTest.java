@@ -22,6 +22,7 @@ public class BaseTest {
         Configuration.browserVersion ="113.0";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
+        Configuration.pageLoadStrategy = "none";
     }
 
     @BeforeEach
