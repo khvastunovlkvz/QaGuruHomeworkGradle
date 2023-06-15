@@ -17,7 +17,7 @@ public class BaseTest {
 
     @BeforeAll
     public static void setUp() {
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.remote = "http://109.106.139.39:4444/wd/hub";
         Configuration.browser = "chrome";
         Configuration.browserVersion ="113.0";
         Configuration.browserSize = "1920x1080";
