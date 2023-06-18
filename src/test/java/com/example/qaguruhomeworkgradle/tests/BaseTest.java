@@ -17,10 +17,10 @@ public class BaseTest {
 
     @BeforeAll
     public static void setUp() {
-        Configuration.remote = "http://109.106.139.39:4444/wd/hub";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion ="113.0";
-        Configuration.browserSize = "1920x1080";
+        Configuration.remote = System.getProperty("selenoidUrl", "http://109.106.139.39:4444") + "/wd/hub";
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browserVersion", "113.0");
+        Configuration.browserSize = System.getProperty("screenResolution", "1920x1080");
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "none";
     }
