@@ -23,6 +23,7 @@ public class BaseTest {
         Configuration.browserSize = System.getProperty("screenResolution", "1920x1080");
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "none";
+        System.out.println();
     }
 
     @BeforeEach
