@@ -1,13 +1,20 @@
 package com.example.qaguruhomeworkgradle.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
 public class StepAllureFormTest extends BaseTest {
-
+    @Feature("Форма регистрации")
+    @Story("Заполнение формы регистрации")
+    @Owner("Александр Соловьев")
+    @DisplayName("Проверка заполнения формы регистрации")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(value ="Form", url = "https://demoqa.com/automation-practice-form")
     @Test
     public void formTest() {
 
