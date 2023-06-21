@@ -11,6 +11,7 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.id;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -91,7 +92,8 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setSubject(String value) {
-        subjects.setValue(value).pressEnter();
+        subjects.setValue(value);
+        $(".subjects-auto-complete__menu").$(byText(value)).click();
 
         return this;
     }
