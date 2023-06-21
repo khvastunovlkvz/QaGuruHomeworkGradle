@@ -96,7 +96,6 @@ public class RegistrationPage {
         return this;
     }
 
-    /*
         public RegistrationPage setHobbies(String value){
             hobbiesWrapper.$(byText(value))
                     .parent()
@@ -104,11 +103,13 @@ public class RegistrationPage {
 
             return this;
         }
-    */
+/*
     public RegistrationPage setHobbies(String hobbies) {
         $(byText(hobbies)).closest("div").click();
+
         return this;
     }
+*/
 
     public RegistrationPage uploadPicture(String value) {
         buttonUploadPicture
