@@ -41,6 +41,7 @@ public class RegistrationPage {
     public RegistrationPage openPage(){
         open(URL);
         footer.should(visible, Duration.ofSeconds(10));
+        Selenide.executeJavaScript("$('#fixedban').remove()");
         Selenide.executeJavaScript("$('footer').remove()");
 
         return this;
