@@ -21,7 +21,7 @@ public class BaseTest {
     RegistrationPage registrationPage;
     TestData testData;
 
-    private static String browserDefault = "chrome",
+    private static String browserDefault = "firefox",
                     browserVersionDefault = "113.0",
                     screenResolutionDefault = "1920x1080";
 
