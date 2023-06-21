@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 public class StepAllureFormTest extends BaseTest {
     @Feature("Форма регистрации")
     @Story("Заполнение формы регистрации")
-    @Owner("Александр Соловьев")
+    @Owner("Алексей Хвастунов")
     @DisplayName("Проверка заполнения формы регистрации")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value ="Form", url = "https://demoqa.com/automation-practice-form")

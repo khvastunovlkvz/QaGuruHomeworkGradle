@@ -30,6 +30,8 @@ public class RegistrationPage {
             buttonUploadPicture = $("#uploadPicture"),
             currentAddress = $("#currentAddress"),
             stateCityWrapper = $("#stateCity-wrapper"),
+            state = $("#state"),
+            city = $("#city"),
             submit = $("#submit");
 
     private CalendarComponent calendarComponent = new CalendarComponent();
@@ -115,14 +117,14 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setState(String value){
-        stateCityWrapper.$(byText("Select State")).click();
+        state.click();
         stateCityWrapper.$(byText(value)).click();
 
         return this;
     }
 
     public RegistrationPage setCity(String value){
-        stateCityWrapper.$(byText("Select City")).click();
+        city.click();
         stateCityWrapper.$(byText(value)).click();
 
         return this;
