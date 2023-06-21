@@ -11,8 +11,6 @@ public class StepAllureFormTest extends BaseTest {
     @Test
     public void formTest() {
 
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открываем страницу с регистрацией ", () -> {
             registrationPage.openPage();
         });
